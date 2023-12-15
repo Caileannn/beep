@@ -11,9 +11,12 @@ GameObject:
   - component: {fileID: 617742103280952077}
   - component: {fileID: 458524912817275595}
   - component: {fileID: 7389850997832525184}
+  - component: {fileID: 4631747364516572240}
+  - component: {fileID: 5066045557576269020}
+  - component: {fileID: 5493481491152720606}
   m_Layer: 0
   m_Name: Wall Indoor 2
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,6 +86,69 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4631747364516572240
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63039395376033901}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.036509477, y: 0.0016454795, z: 0.02500001}
+  m_Center: {x: -0.011312401, y: 0.010031431, z: -0.001935895}
+--- !u!65 &5066045557576269020
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63039395376033901}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.001706636, y: 0.07009021, z: 0.02500001}
+  m_Center: {x: 0.0060890256, y: 0.024420964, z: -0.0019358948}
+--- !u!65 &5493481491152720606
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63039395376033901}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0017636825, y: 0.010311329, z: 0.02500001}
+  m_Center: {x: 0.0060605137, y: -0.035378512, z: -0.001935895}
 --- !u!1 &89248043004130689
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,7 +160,7 @@ GameObject:
   - component: {fileID: 5877302012564450811}
   m_Layer: 0
   m_Name: Window Front Door Group
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1390,7 +1456,7 @@ GameObject:
   - component: {fileID: 4763879381097623192}
   m_Layer: 0
   m_Name: Wall Indoor 3
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1497,7 +1563,7 @@ GameObject:
   - component: {fileID: 6638788423833310982}
   m_Layer: 0
   m_Name: Bjore Chair .004
-  m_TagString: Untagged
+  m_TagString: object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1598,7 +1664,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2327163463830885856}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 20
   m_Drag: 0.05
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1613,10 +1679,10 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!1 &2344773273733383885
 GameObject:
   m_ObjectHideFlags: 0
@@ -1910,9 +1976,10 @@ GameObject:
   - component: {fileID: 6691238424883820027}
   - component: {fileID: 5688754672710772716}
   - component: {fileID: 6499161419025273785}
+  - component: {fileID: 4313696307705394882}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1925,8 +1992,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2818686457907608968}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.95184636, w: 0.30657545}
-  m_LocalPosition: {x: 0.00448, y: -0.0005525, z: 0.0095}
+  m_LocalRotation: {x: -0, y: -0.000000036262914, z: 0.95184636, w: 0.30657545}
+  m_LocalPosition: {x: 0.00448, y: -0.00055250275, z: 0.009500001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2006,6 +2073,33 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2619086233303812490, guid: 9a2dfd9a5eeb86549a634733d63887cd, type: 3}
+--- !u!54 &4313696307705394882
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2818686457907608968}
+  serializedVersion: 4
+  m_Mass: 40
+  m_Drag: 0.05
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!1 &2835662890488336026
 GameObject:
   m_ObjectHideFlags: 0
@@ -2456,9 +2550,13 @@ GameObject:
   - component: {fileID: 3898308315186469975}
   - component: {fileID: 9125922713970993708}
   - component: {fileID: 7364741620484543766}
+  - component: {fileID: 2800860997226091873}
+  - component: {fileID: 306362454046634493}
+  - component: {fileID: 3956849324467643441}
+  - component: {fileID: 2408065938355684173}
   m_Layer: 0
   m_Name: Stairs.001
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2551,6 +2649,90 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7803668523658286640, guid: 9a2dfd9a5eeb86549a634733d63887cd, type: 3}
+--- !u!65 &2800860997226091873
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3258608871446228135}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.022692598, y: 0.03795964, z: 0.022099998}
+  m_Center: {x: -0.0068158307, y: 0.03917557, z: -0.00023425101}
+--- !u!65 &306362454046634493
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3258608871446228135}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0014670714, y: 0.039300006, z: 0.022099998}
+  m_Center: {x: -0.0046558026, y: 0.000542881, z: -0.00023425197}
+--- !u!65 &3956849324467643441
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3258608871446228135}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0014469739, y: 0.039300006, z: 0.022099998}
+  m_Center: {x: -0.004645761, y: 0.000542881, z: -0.00023425197}
+--- !u!65 &2408065938355684173
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3258608871446228135}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0016525832, y: 0.039300006, z: 0.022099998}
+  m_Center: {x: 0.0053680227, y: 0.000542881, z: -0.00023425197}
 --- !u!1 &3274914854078946471
 GameObject:
   m_ObjectHideFlags: 0
@@ -2566,7 +2748,7 @@ GameObject:
   - component: {fileID: 5637805558761144620}
   m_Layer: 0
   m_Name: Adde Chair.001
-  m_TagString: Untagged
+  m_TagString: object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2666,7 +2848,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3274914854078946471}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 20
   m_Drag: 0.05
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -2681,10 +2863,10 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!1 &3279755496093021000
 GameObject:
   m_ObjectHideFlags: 0
@@ -2699,7 +2881,7 @@ GameObject:
   - component: {fileID: 3811218835322833129}
   m_Layer: 0
   m_Name: Porch
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2776,7 +2958,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3279755496093021000}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: f372e2eb690f6bc4e9a743d38cef115f, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -3078,7 +3260,7 @@ GameObject:
   - component: {fileID: 2561389698646439301}
   m_Layer: 0
   m_Name: Ivar cabinet
-  m_TagString: Untagged
+  m_TagString: object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3178,7 +3360,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4084225958953947543}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 40
   m_Drag: 0.05
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -3193,10 +3375,10 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!1 &4550646037232209906
 GameObject:
   m_ObjectHideFlags: 0
@@ -3211,7 +3393,7 @@ GameObject:
   - component: {fileID: 5350935985489647076}
   m_Layer: 0
   m_Name: 'Window Front Door '
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3319,7 +3501,7 @@ GameObject:
   - component: {fileID: 7752484648543212834}
   m_Layer: 0
   m_Name: 'Bjore Chair '
-  m_TagString: Untagged
+  m_TagString: object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3420,7 +3602,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4587495768845600318}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 20
   m_Drag: 0.05
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -3435,10 +3617,10 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!1 &4802671542788107603
 GameObject:
   m_ObjectHideFlags: 0
@@ -3901,7 +4083,7 @@ GameObject:
   - component: {fileID: 2504999105634458233}
   m_Layer: 0
   m_Name: Wall Indoor 1
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4114,7 +4296,7 @@ GameObject:
   - component: {fileID: 188256980844090894}
   m_Layer: 0
   m_Name: Bjore Chair .001
-  m_TagString: Untagged
+  m_TagString: object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4215,7 +4397,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5237589420880561902}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 20
   m_Drag: 0.05
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -4230,10 +4412,10 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!1 &5286982575326792071
 GameObject:
   m_ObjectHideFlags: 0
@@ -4717,10 +4899,14 @@ GameObject:
   - component: {fileID: 1646202841122409064}
   - component: {fileID: 1435781993233114231}
   - component: {fileID: 7113065038375557221}
-  - component: {fileID: 5406243434694783365}
+  - component: {fileID: 3823060780346140193}
+  - component: {fileID: 2010299962256401876}
+  - component: {fileID: 7666855681999500290}
+  - component: {fileID: 9118434380178519584}
+  - component: {fileID: 5726547172558210484}
   m_Layer: 0
   m_Name: Walls Outside
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4792,8 +4978,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5406243434694783365
-MeshCollider:
+--- !u!65 &3823060780346140193
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4810,10 +4996,93 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -298746826588086856, guid: 9a2dfd9a5eeb86549a634733d63887cd, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 0.051753253, y: 0.0016632922, z: 0.02500001}
+  m_Center: {x: 0.03968406, y: -0.03872661, z: 0.0034459964}
+--- !u!65 &2010299962256401876
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5706918233518499206}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0017899781, y: 0.10267662, z: 0.02500001}
+  m_Center: {x: 0.06466605, y: 0.011779358, z: 0.0034459962}
+--- !u!65 &7666855681999500290
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5706918233518499206}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0530543, y: 0.0016632922, z: 0.02500001}
+  m_Center: {x: -0.022355162, y: -0.03872661, z: 0.0034459964}
+--- !u!65 &9118434380178519584
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5706918233518499206}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0017479592, y: 0.10300357, z: 0.02500001}
+  m_Center: {x: -0.04961954, y: 0.01194326, z: 0.0034459962}
+--- !u!65 &5726547172558210484
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5706918233518499206}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.11499372, y: 0.0020598683, z: 0.02500001}
+  m_Center: {x: 0.00700276, y: 0.062415745, z: 0.0034459962}
 --- !u!1 &5881208259826182327
 GameObject:
   m_ObjectHideFlags: 0
@@ -4828,7 +5097,7 @@ GameObject:
   - component: {fileID: 8662103962791241240}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5484,7 +5753,7 @@ GameObject:
   - component: {fileID: 2004445770724472799}
   m_Layer: 0
   m_Name: CoatRack
-  m_TagString: Untagged
+  m_TagString: object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5498,7 +5767,7 @@ Transform:
   m_GameObject: {fileID: 6898079737390512290}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.1581083, y: -0.003175, z: -0.3978905}
+  m_LocalPosition: {x: 0.166, y: -0.003175, z: -0.152}
   m_LocalScale: {x: 2.54, y: 2.54, z: 2.54}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5584,7 +5853,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6898079737390512290}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 20
   m_Drag: 0.05
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -5599,10 +5868,10 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!1 &6921472329390765540
 GameObject:
   m_ObjectHideFlags: 0
@@ -5617,7 +5886,7 @@ GameObject:
   - component: {fileID: 8489301588481971808}
   m_Layer: 0
   m_Name: Wall Indoor 4
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5724,7 +5993,7 @@ GameObject:
   - component: {fileID: 5193451697212578841}
   m_Layer: 0
   m_Name: Ivar Drawer
-  m_TagString: Untagged
+  m_TagString: object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5824,7 +6093,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7276363101702980630}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 40
   m_Drag: 0.05
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -5839,10 +6108,10 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!1 &7479849818738609861
 GameObject:
   m_ObjectHideFlags: 0
@@ -5858,7 +6127,7 @@ GameObject:
   - component: {fileID: 2982021837035939147}
   m_Layer: 0
   m_Name: Bjore Chair .005
-  m_TagString: Untagged
+  m_TagString: object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5959,7 +6228,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7479849818738609861}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 20
   m_Drag: 0.05
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -5974,10 +6243,10 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!1 &7492020448171511891
 GameObject:
   m_ObjectHideFlags: 0
@@ -6079,7 +6348,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
@@ -6376,7 +6645,7 @@ GameObject:
   - component: {fileID: 1479839752092829188}
   m_Layer: 0
   m_Name: Bjursta Table
-  m_TagString: Untagged
+  m_TagString: object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6559,7 +6828,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7588636741818648791}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 100
   m_Drag: 0.05
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -6574,10 +6843,10 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!1 &7636350943354910199
 GameObject:
   m_ObjectHideFlags: 0
@@ -7641,7 +7910,7 @@ GameObject:
   - component: {fileID: 309489014308007526}
   m_Layer: 0
   m_Name: Adde Chair
-  m_TagString: Untagged
+  m_TagString: object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7741,7 +8010,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8730016812907474954}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 25
   m_Drag: 0.05
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -7756,10 +8025,10 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!1 &8817867779282338620
 GameObject:
   m_ObjectHideFlags: 0
@@ -8349,7 +8618,7 @@ GameObject:
   - component: {fileID: 6614872325729733271}
   m_Layer: 0
   m_Name: Door Front Group
-  m_TagString: Untagged
+  m_TagString: object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8362,9 +8631,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9039297709934854359}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.49362186, y: 0, z: 0.030512478}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalRotation: {x: -0.7071068, y: 0.000000029802322, z: 0.000000014901158, w: 0.7071067}
+  m_LocalPosition: {x: 0.49362195, y: 0, z: 0.030512571}
+  m_LocalScale: {x: 100, y: 100.000015, z: 100.000015}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 343672379759964846}
@@ -8493,7 +8762,7 @@ GameObject:
   - component: {fileID: 6773882506998949080}
   m_Layer: 0
   m_Name: Froggy Chair
-  m_TagString: Untagged
+  m_TagString: object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8594,7 +8863,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9193829343080163018}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 15
   m_Drag: 0.05
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -8609,7 +8878,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3

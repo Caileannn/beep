@@ -16,6 +16,7 @@
     "com.unity.ml-agents": "2.0.1",
     "com.unity.ml-agents.extensions": "git+https://github.com/Unity-Technologies/ml-agents.git?path=com.unity.ml-agents.extensions#release_20",
     "com.unity.purchasing": "4.9.3",
+    "com.unity.recorder": "4.0.2",
     "com.unity.render-pipelines.high-definition": "14.0.8",
     "com.unity.rendering.denoising": "1.0.0",
     "com.unity.terrain-tools": "5.0.4",

@@ -126,7 +126,7 @@ namespace Unity.MLAgentsExamples
 
             if (respawnIfTouched)
             {
-                MoveTargetToRandomPosition();
+                //MoveTargetToRandomPosition();
             }
         }
 

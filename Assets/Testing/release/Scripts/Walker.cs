@@ -177,6 +177,12 @@ public class Walker : Agent
         m_JointDriveController.SetupBodyPart(BLT);
         m_JointDriveController.SetupBodyPart(BLL);
         m_JointDriveController.SetupBodyPart(BLF);
+
+
+        //Application.targetFrameRate = 60;
+        //Time.captureDeltaTime
+        //Debug.Log("DR " + Time.captureDeltaTime);
+        Debug.Log("FR" + Time.captureFramerate);
     }
 
     /* Loop over Body Parts & Reset them to inital conditions
@@ -472,7 +478,9 @@ public class Walker : Agent
         else
         {
            AddReward(matchSpeedReward * lookAtTargetReward);
-           Debug.Log("look: " + lookAtTargetReward + " msp: " + matchSpeedReward);
+            //Debug.Log("look: " + lookAtTargetReward + " msp: " + matchSpeedReward);
+            //Debug.Log(this.StepCount);
+            //Debug.Log("TS " + Time.timeScale);
 
         }
 

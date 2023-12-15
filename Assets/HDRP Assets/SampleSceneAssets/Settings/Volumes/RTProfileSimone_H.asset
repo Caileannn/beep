@@ -15,7 +15,7 @@ MonoBehaviour:
   active: 1
   quality:
     m_OverrideState: 1
-    m_Value: 3
+    m_Value: 2
   enabled:
     m_OverrideState: 1
     m_Value: 1
@@ -27,10 +27,10 @@ MonoBehaviour:
     m_Value: 4
   m_MinSmoothness:
     m_OverrideState: 1
-    m_Value: 0.6
+    m_Value: 0
   m_SmoothnessFadeStart:
     m_OverrideState: 1
-    m_Value: 0.8
+    m_Value: 0
   reflectSky:
     m_OverrideState: 0
     m_Value: 1
@@ -89,18 +89,18 @@ MonoBehaviour:
     m_Value: 1
   m_RayLength:
     m_OverrideState: 1
-    m_Value: 60
+    m_Value: 50
   m_ClampValue:
     m_OverrideState: 1
-    m_Value: 10
+    m_Value: 1.2
   m_Denoise:
     m_OverrideState: 1
     m_Value: 1
   m_DenoiserRadius:
     m_OverrideState: 1
-    m_Value: 8
+    m_Value: 16
   m_AffectSmoothSurfaces:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   mode:
     m_OverrideState: 1
@@ -116,7 +116,7 @@ MonoBehaviour:
     m_Value: 1
   m_RayMaxIterationsRT:
     m_OverrideState: 1
-    m_Value: 48
+    m_Value: 64
 --- !u!114 &-3918927708574149199
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -129,10 +129,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31394aa05878563408489d5c1688f3a0, type: 3}
   m_Name: PathTracing
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enable:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   layerMask:
     m_OverrideState: 1
     m_Value:
@@ -140,7 +140,7 @@ MonoBehaviour:
       m_Bits: 4294967295
   maximumSamples:
     m_OverrideState: 1
-    m_Value: 5
+    m_Value: 10
   minimumDepth:
     m_OverrideState: 1
     m_Value: 1
@@ -154,10 +154,10 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 0
   useAOVs:
-    m_OverrideState: 1
-    m_Value: 1
+    m_OverrideState: 0
+    m_Value: 0
   temporal:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
   asyncDenoising:
     m_OverrideState: 1
@@ -186,7 +186,7 @@ MonoBehaviour:
     m_Value: 3
   rayTracing:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
   intensity:
     m_OverrideState: 1
     m_Value: 1
@@ -299,7 +299,7 @@ MonoBehaviour:
   active: 1
   quality:
     m_OverrideState: 1
-    m_Value: 3
+    m_Value: 2
   enable:
     m_OverrideState: 1
     m_Value: 1
@@ -317,7 +317,7 @@ MonoBehaviour:
     m_Value: 0
   m_MaxRaySteps:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 128
   m_DenoiseSS:
     m_OverrideState: 1
     m_Value: 1
@@ -326,7 +326,7 @@ MonoBehaviour:
     m_Value: 0
   m_DenoiserRadiusSS:
     m_OverrideState: 1
-    m_Value: 0.6
+    m_Value: 0.5
   m_SecondDenoiserPassSS:
     m_OverrideState: 1
     m_Value: 1
